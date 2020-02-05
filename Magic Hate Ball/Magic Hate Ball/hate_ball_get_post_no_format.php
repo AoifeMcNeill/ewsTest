@@ -1,7 +1,7 @@
 <?php
 	header('Access-Control-Allow-Origin: *', false);	
 
-	function getParameter ($var) {
+	function getParameter ($question) {
     if (isset ($_GET [$var])) {  
 	  	return $_GET[$var];
 	  }
@@ -16,7 +16,7 @@
 	$action= getParameter ("action");
 	
 	  	
-	  if ($question) {
+	  if (!$question) {
 	  	echo "You didn't ask a question.";
 	  	return;
 	  }
