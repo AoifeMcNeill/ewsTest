@@ -1,5 +1,5 @@
 <?php
-	header('Access-Control-Allow-Origin: *', false);	
+	header('Access-Control-Allow-Origin: *', true);	
 
 	function getParameter ($var) {
     if (isset ($_GET [$var])) {  
